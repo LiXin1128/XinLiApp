@@ -1,7 +1,6 @@
 <h1>Welcome to Bike Berlin</h1>
 <h2>Your source for used bikes in Berlin</h2>
 <p>Welcome! The date and time is <%= Time.now %></p>
-<%= image_tag("index_bg.jpg", class: "img-responsive my-image") %>
 
     <div class="container-fluid">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -15,21 +14,21 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="img/hero_4.jpg" alt="...">
+              <%= image_tag("bike_1.jpg", class: "img-responsive my-image") %>
               <div class="carousel-caption">
                   <h3>Here is an example headline</h3>
                   <p>Here is an example description</p>
               </div>
             </div>
             <div class="item">
-              <img src="img/hero_5.jpg" alt="...">
+              <%= image_tag("bike_2.jpg", class: "img-responsive my-image") %>
               <div class="carousel-caption">
                 <h3>Here is an example headline</h3>
                 <p>Here is an example description</p>
               </div>
             </div>
             <div class="item">
-              <img src="img/hero_6.jpg" alt="...">
+              <%= image_tag("bike_3.jpg", class: "img-responsive my-image") %>
               <div class="carousel-caption">
                 <h3>Here is an example headline</h3>
                 <p>Here is an example description</p>
