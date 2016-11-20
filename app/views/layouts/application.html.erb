@@ -19,14 +19,15 @@
   <body>
   
   <div class="projectName navbar-brand">
-    <a href="#">XIN LI</a>
+    <%= link_to('Bike', static_pages_index_path) %>
   </div> <!--end projectName -->
   <div class="navbar-collapse collapse">
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="xinliapp.herokuapp.com/static_pages/index">Home</a></li>
-        <li><a href="xinliapp.herokuapp.com/static_pages/about">About</a></li>
-        <li><a href="xinliapp.herokuapp.com/static_pages/contact">Contact</a></li>
+        <li><%= link_to('Home', static_pages_index_path) %></li>
+        <li><%= link_to('Products', products_path) %></li>
+        <li><%= link_to('About', static_pages_about_path) %></li>
+        <li><%= link_to('Contact', static_pages_contact_path) %></li>
       </ul>
     </nav>
   </div>
@@ -34,11 +35,8 @@
     <%= yield %>
 
   <footer>
-      <div class="copyright col-md-6">
-          <span class="copyright">Copyright &copy; XIN LI, 2016</span>
-      </div>
-      <div class="policy col-md-6">
-          <li><a href="#">Privacy Policy</a></li>
+      <div class="copyright col-md-12">
+          <span class="copyright">Copyright &copy; Bike Xin Li, 2016</span>
       </div>
   </footer><!--Footer End-->
 
