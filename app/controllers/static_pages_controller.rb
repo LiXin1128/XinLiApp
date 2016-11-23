@@ -1,7 +1,5 @@
 class StaticPagesController < ApplicationController
-  def about
-  end
-
-  def contact
+  def landing_page
+  	@featured_product = Product.first
   end
 end
