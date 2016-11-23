@@ -13,7 +13,7 @@
         <h1><%= product.name %></h1>  
         <p><%= product.description %></p>
         <%= image_tag(product.image_url, class: "img-responsive") %>
-        <strong><%= product.price %></strong>
+        <strong>$ <%= product.price %></strong>
       </div><!-- /col -->
     <% end %>
   </div>
