@@ -4,13 +4,11 @@
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
-
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-sm-2 col-md-4">
-        <h1><%= product.name %></h1>  
+        <h2><%= product.name %></h2>  
         <p><%= product.description %></p>
         <%= image_tag(product.image_url, class: "img-responsive") %>
         <strong>$ <%= product.price %></strong>
@@ -18,3 +16,5 @@
     <% end %>
   </div>
 </div>
+
+<h3><%= link_to 'New Product', new_product_path %></h3>
