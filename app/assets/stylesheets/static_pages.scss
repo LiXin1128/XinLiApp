@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+	background-color: #ffffff;
+}
+
+
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
@@ -66,5 +71,6 @@
 
 //copyright
 .copyright{
+	font-size:0.3em;
 	text-align: center;
 }
